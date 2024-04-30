@@ -1,0 +1,119 @@
+.search-bar-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: solid 1px rgb(230, 184, 156);
+  border-radius: 5px;
+  background: url('../assets/search-solid.svg') no-repeat 1rem white;
+  color: rgb(133, 133, 133);
+  font-size: 0.9rem;
+  font-family: Ruluko, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  min-width: 250px;
+  flex-basis: 25%;
+  padding-left: 2.5rem;
+  margin-left: 1rem;
+  height: 2rem;
+}
+
+.search-bar:hover {
+  cursor: pointer;
+}
+
+.search-bar:focus-visible {
+  border: rgb(230, 184, 156) 1px solid;
+  outline: rgb(230, 184, 156) 1.5px solid;
+  cursor: text;
+}
+
+.browse-recipes-page {
+  padding: 0 2.3rem;
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 0;
+  height: 100vh;
+}
+
+.page-heading {
+  padding: 0 2.5rem;
+}
+
+.recipes {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 1rem;
+}
+
+.recipe-item-container {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: solid 1px rgb(230, 184, 156);
+  width: 200px;
+  height: 280px;
+  margin: 0 1rem 2rem 0;
+  transition: transform 0.5s 0.1s;
+  transition: box-shadow 0.2s 0.1s;
+}
+
+.recipe-item-container:hover {
+  box-shadow: rgb(243, 116, 174) 5px 5px 5px;
+  transform: translateY(-2px);
+}
+
+.recipe-item {
+  width: 200px;
+  height: 250px;
+  position: relative;
+}
+
+.recipe-item:hover {
+  border-bottom: none !important;
+}
+
+.recipe-item > img {
+  width: 100%;
+  height: 160px;
+}
+
+.recipe-item > p {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100px;
+}
+
+.recipe-item > p:hover {
+  border-bottom: solid 3px rgb(237, 147, 144);
+}
+
+@media screen and (width <=768px) {
+  .browse-recipes-page {
+    margin: 3rem auto;
+    margin-top: 0;
+    height: auto;
+  }
+
+  .recipes {
+    padding-left: 0;
+    justify-content: center;
+  }
+}
+
+@media screen and (width <=992px) {
+  .browse-recipes-page {
+    margin: 3rem auto;
+    margin-top: 0;
+    height: auto;
+  }
+
+  .recipes {
+    padding-left: 0;
+  }
+}

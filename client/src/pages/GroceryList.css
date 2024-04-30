@@ -1,0 +1,108 @@
+.grocery-list-title {
+  font-family: Sansita, sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: rgb(50, 83, 61);
+}
+
+.checkbox {
+  background-color: rgb(237, 147, 144);
+}
+
+.clicked-recipe-refs {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.clicked-recipe-refs::-webkit-scrollbar {
+  display: none;
+}
+
+div.heading-and-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding-bottom: 0;
+}
+
+div.heading-and-button > h1.page-title {
+  width: 171px;
+}
+
+.title-and-x > div {
+  display: flex;
+  margin-top: 2rem;
+}
+
+div.heading-and-button > div {
+  display: flex;
+  align-items: center;
+}
+
+div.heading-and-button > p {
+  width: 207px;
+}
+
+.recipe-item > a > img {
+  width: 100%;
+  height: 160px;
+}
+
+.title-and-x {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe-item > div > a > p {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100px;
+}
+
+button.x-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(252, 246, 243);
+  border: 2px solid rgb(237, 147, 144);
+  border-radius: 5px;
+  color: rgb(243, 116, 174);
+  width: 25px;
+  height: 25px;
+  padding: 0.2rem 0.3rem;
+  margin: 1rem 1rem 1rem 3rem;
+}
+
+ul.grocery-list {
+  margin: 0;
+  padding-top: 0;
+}
+
+p > span.pink {
+  padding: 5rem 0 0;
+}
+
+@media screen and (width <= 768px) {
+  button.x-button {
+    margin: 0 1rem 0 0;
+  }
+
+  div.heading-and-button {
+    flex-direction: column;
+  }
+
+  div.heading-and-button > h1.page-title {
+    margin-bottom: 0;
+  }
+
+  ul.grocery-list {
+    padding-top: 0;
+  }
+}
+
+@media screen and (width > 768px) {
+  div.heading-and-button {
+    flex-direction: row;
+  }
+}
